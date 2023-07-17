@@ -96,7 +96,7 @@ if __name__ == '__main__':
     offset = (300, 100)
 
     for seg, bbox in zip(segmentations, bboxes):
-        cv2.drawContours(background_image, [seg], -1, (0, 0, 0), -1)
+        cv2.drawContours(background_image, [seg], -1, (0, 0, 0), -1)  # comment it when moving object
         # cv2.drawContours(background_image, [seg], -1, (0, 0, 0), -1)
 
         # move object
